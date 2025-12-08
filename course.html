@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SDGP Barkot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="collegepic/logo.png" alt="SDGP Barkot Logo" /></a>
+            <h3><a href="index.html">Satyanand Dimri Government Polytechnic, Barkot</a></h3>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- Courses content section -->
+    <section id="courses" class="content-section reveal">
+        <div class="container">
+            <h2>Offered Courses</h2>
+            <p>Explore our diploma programs designed for the future.</p>
+            <div class="courses-container">
+                <div class="card">
+                    <i class="fas fa-laptop-code card-icon"></i>
+                    <h3>Information Technology</h3>
+                    <p>Providing skills in software development, networking, and database management.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-hard-hat card-icon"></i>
+                    <h3>Civil Engineering</h3>
+                    <p>Focusing on designing and constructing the built environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities section -->
+    <section class="facilities reveal">
+        <h1>Our Facilities</h1>
+        <p>Supporting your learning journey with world-class infrastructure.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="collegepic/library2.jpg" alt="Library">
+                <h3>Library</h3>
+                <p>A vast collection of technical books, journals, and digital resources.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="collegepic/lab.jpg" alt="Computer Lab">
+                <h3>Computer Labs</h3>
+                <p>High-performance computing labs with high-speed internet access.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="collegepic/workshop.jpg" alt="Workshops">
+                <h3>Workshops</h3>
+                <p>Well-equipped workshops for practical training in engineering trades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Satyanand Dimri Government Polytechnic, Barkot is committed to providing quality technical education.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by AADI </p>
+    </section>
+
+    <!-- Chatbot integration -->
+    <div id="chatbot-container">
+        <div id="chatbot-toggle-button" title="Chat with us!">
+            <div class="pulse-ring"></div>
+            <div class="icon-container">
+                <i class="fas fa-robot bot-icon"></i>
+            </div>
+            <span class="hello-bubble">Hello!</span>
+            <span class="notification-badge">1</span>
+        </div>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                College Info Bot
+                <span id="chatbot-close-button">&times;</span>
+            </div>
+            <div id="chatbot-messages">
+                <div class="message bot-message">Hello! I am the College Info Bot. How can I help you today?</div>
+                <div class="quick-questions-container">
+                    <button class="quick-btn" data-question="What courses are offered?">Courses</button>
+                    <button class="quick-btn" data-question="How do I apply?">Admissions</button>
+                    <button class="quick-btn" data-question="What are the fees?">Fees</button>
+                    <button class="quick-btn" data-question="Contact information">Contact</button>
+                </div>
+            </div>
+            <div id="chatbot-input-area">
+                <input type="text" id="user-input" placeholder="Ask a question about the college...">
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/chatbot.js?v=1.2"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Script for mobile menu toggle -->
+    <script>
+        var navLinks = document.getElementById("navlinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-250px";
+        }
+    </script>
+</body>
+
+</html>

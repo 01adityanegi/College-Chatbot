@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDGP Barkot - College Chatbot</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header section -->
+  <section class="header">
+
+    <nav>
+      <a href="index.html"><img src="collegepic/logo.png" alt="SDGP Barkot Logo" /></a>
+      <h3><a href="index.html">Satyanand Dimri Government Polytechnic, Barkot</a></h3>
+
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Welcome to S.D.G.P. Barkot</h1>
+      <p>
+        Empowering the future with technical excellence.
+        Affiliated to UBTER, we offer premier Diploma courses in Civil Engineering and Information Technology.
+      </p>
+      <a href="about.html" class="f-btn">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Courses section -->
+  <section id="courses" class="content-section">
+    <div class="container">
+      <h2>Offered Courses</h2>
+      <p>Explore our diploma programs designed for the future.</p>
+      <div class="courses-container">
+        <div class="card">
+          <i class="fas fa-laptop-code card-icon"></i>
+          <h3>Information Technology</h3>
+          <p>Providing skills in software development, networking, and database management.</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-hard-hat card-icon"></i>
+          <h3>Civil Engineering</h3>
+          <p>Focusing on designing and constructing the built environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Campus section -->
+  <section class="campus reveal">
+    <h1>Our Campus</h1>
+    <p>Our campus blends academics with nature, offering a vibrant and inspiring environment.</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="collegepic/campus.jpeg" alt="Campus">
+        <div class="layer">
+          <h3>Campus</h3>
+        </div>
+      </div>
+
+      <div class="campus-col">
+        <img src="collegepic/lab.jpg" alt="Lab">
+        <div class="layer">
+          <h3>Labs</h3>
+        </div>
+      </div>
+
+      <div class="campus-col">
+        <img src="collegepic/activity.jpeg" alt="Activities">
+        <div class="layer">
+          <h3>Institute Activities</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Notice Board section -->
+  <section id="notices" class="content-section notice-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <h2>Notice Board</h2>
+        <p>Latest updates and important announcements</p>
+      </div>
+
+      <div class="notice-board-wrapper">
+        <div class="notice-header">
+          <span><i class="fas fa-bullhorn"></i> Announcements</span>
+          <span class="live-indicator"><span class="blink"></span> Live Updates</span>
+        </div>
+        <div class="notice-scroller">
+          <ul class="notice-list-vertical">
+            <!-- List of notices -->
+            <li>
+              <a href="https://ubterex.in/Student/Login.aspx" target="_blank">
+                <div class="notice-date">
+                  <span class="day">30</span>
+                  <span class="month">Nov</span>
+                </div>
+                <div class="notice-content">
+                  <h4>Check previous class results</h4>
+                  <span class="badge new">New</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholarships.gov.in/Students" target="_blank">
+                <div class="notice-date">
+                  <span class="day">28</span>
+                  <span class="month">Nov</span>
+                </div>
+                <div class="notice-content">
+                  <h4>Scholarship application deadline extended</h4>
+                  <p>Last date to apply is now Dec 15th.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://ubterjeep.co.in/Result/Jeeprank.aspx" target="_blank">
+                <div class="notice-date">
+                  <span class="day">25</span>
+                  <span class="month">Nov</span>
+                </div>
+                <div class="notice-content">
+                  <h4>Download JEEP-2025 Rank Card</h4>
+                  <span class="badge new">New</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://gpbarkot.org.in/wp-content/uploads/2025/03/JEEP_Brochure2025.pdf" target="_blank">
+                <div class="notice-date">
+                  <span class="day">20</span>
+                  <span class="month">Nov</span>
+                </div>
+                <div class="notice-content">
+                  <h4>JEEP Brochure 2025</h4>
+                  <p>Download the official brochure.</p>
+                </div>
+              </a>
+            </li>
+            <!-- Duplicate notices for scrolling effect -->
+            <li>
+              <a href="https://ubterex.in/Student/Login.aspx" target="_blank">
+                <div class="notice-date">
+                  <span class="day">30</span>
+                  <span class="month">Nov</span>
+                </div>
+                <div class="notice-content">
+                  <h4>Check previous class results</h4>
+                  <span class="badge new">New</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholarships.gov.in/Students" target="_blank">
+                <div class="notice-date">
+                  <span class="day">28</span>
+                  <span class="month">Nov</span>
+                </div>
+                <div class="notice-content">
+                  <h4>Scholarship application deadline extended</h4>
+                  <p>Last date to apply is now Dec 15th.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Facilities section -->
+  <section class="facilities reveal">
+    <h1>Facilities</h1>
+    <p>Our campus provides modern infrastructure and educational resources.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="collegepic/library2.jpg" alt="Library" class="facilities-col-ii">
+        <h3>Library</h3>
+        <p>A well-stocked library with a wide range of books and digital resources.</p>
+      </div>
+
+      <div class="facilities-col">
+        <img src="collegepic/Sports-1-1.jpeg" alt="Sports" class="facilities-col-ii">
+        <h3>Sports</h3>
+        <p>Facilities for various indoor and outdoor sports activities.</p>
+      </div>
+
+      <div class="facilities-col">
+        <img src="collegepic/lab.jpg" alt="Lab" class="facilities-col-ii">
+        <h3>Modern Labs</h3>
+        <p>State-of-the-art laboratories for practical learning and research.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact section -->
+  <section class="Contact">
+    <h1>Reach out to Government Polytechnic Barkot Uttarkashi</h1>
+    <a href="contact.html" class="f-btn">Contact Us</a>
+  </section>
+
+
+  <!-- Footer section -->
+  <section class="footer">
+    <h4>About us</h4>
+    <p>Satyanand Dimri Government Polytechnic, Barkot is committed to providing quality technical education.</p>
+    <p>Made with <i class="fa fa-heart"></i> by AADI </p>
+  </section>
+
+
+  <!-- Chatbot integration -->
+  <!-- Container for the chatbot -->
+  <div id="chatbot-container">
+    <div id="chatbot-toggle-button" title="Chat with us!">
+      <div class="pulse-ring"></div>
+      <div class="icon-container">
+        <i class="fas fa-robot bot-icon"></i>
+      </div>
+      <span class="hello-bubble">Hello!</span>
+      <span class="notification-badge">1</span>
+    </div>
+    <div id="chatbot-window" class="hidden">
+      <div id="chatbot-header">
+        College Info Bot
+        <span id="chatbot-close-button">&times;</span>
+      </div>
+      <div id="chatbot-messages">
+        <div class="message bot-message">Hello! I am the College Info Bot. How can I help you today?</div>
+        <div class="quick-questions-container">
+          <button class="quick-btn" data-question="What courses are offered?">Courses</button>
+          <button class="quick-btn" data-question="How do I apply?">Admissions</button>
+          <button class="quick-btn" data-question="What are the fees?">Fees</button>
+          <button class="quick-btn" data-question="Contact information">Contact</button>
+        </div>
+      </div>
+      <div id="chatbot-input-area">
+        <input type="text" id="user-input" placeholder="Ask a question about the college...">
+        <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load JavaScript files -->
+  <script src="js/chatbot.js?v=1.2"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Script for mobile menu toggle -->
+  <script>
+    var navLinks = document.getElementById("navlinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-250px";
+    }
+  </script>
+</body>
+
+</html>

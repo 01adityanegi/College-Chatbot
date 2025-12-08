@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SDGP Barkot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="collegepic/logo.png" alt="SDGP Barkot Logo" /></a>
+            <h3><a href="index.html">Satyanand Dimri Government Polytechnic, Barkot</a></h3>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About content section -->
+
+    <section class="about-us reveal">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Best Polytechnic College</h1>
+                <p>
+                    Satyanand Dimri Government Polytechnic, Barkot (Uttarkashi) is a premier technical institution in
+                    Uttarakhand.
+                    Established with the vision of providing high-quality technical education to the youth of the
+                    region,
+                    we are committed to excellence in engineering and technology.
+                </p>
+                <p>
+                    Our campus is equipped with state-of-the-art laboratories, a well-stocked library, and modern
+                    classrooms.
+                    We focus on holistic development, encouraging students to participate in sports, cultural
+                    activities, and technical fests.
+                    Affiliated to the Uttarakhand Board of Technical Education Roorkee (UBTER), our curriculum is
+                    designed to meet industry standards.
+                </p>
+                <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="collegepic/college.jpeg" alt="About College">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us section -->
+    <div class="row" style="margin-top: 50px; text-align: center; gap: 20px; justify-content: center;">
+        <div class="card">
+            <i class="fas fa-chalkboard-teacher card-icon"></i>
+            <h3>Expert Faculty</h3>
+            <p>Learn from experienced professionals dedicated to your success.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-flask card-icon"></i>
+            <h3>Modern Labs</h3>
+            <p>Hands-on experience with the latest equipment and technology.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-user-graduate card-icon"></i>
+            <h3>Placement Support</h3>
+            <p>Guidance and support to help you land your dream job.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Satyanand Dimri Government Polytechnic, Barkot is committed to providing quality technical education.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by AADI </p>
+    </section>
+
+    <!-- Chatbot integration -->
+    <div id="chatbot-container">
+        <div id="chatbot-toggle-button" title="Chat with us!">
+            <div class="pulse-ring"></div>
+            <div class="icon-container">
+                <i class="fas fa-robot bot-icon"></i>
+            </div>
+            <span class="hello-bubble">Hello!</span>
+            <span class="notification-badge">1</span>
+        </div>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                College Info Bot
+                <span id="chatbot-close-button">&times;</span>
+            </div>
+            <div id="chatbot-messages">
+                <div class="message bot-message">Hello! I am the College Info Bot. How can I help you today?</div>
+                <div class="quick-questions-container">
+                    <button class="quick-btn" data-question="What courses are offered?">Courses</button>
+                    <button class="quick-btn" data-question="How do I apply?">Admissions</button>
+                    <button class="quick-btn" data-question="What are the fees?">Fees</button>
+                    <button class="quick-btn" data-question="Contact information">Contact</button>
+                </div>
+            </div>
+            <div id="chatbot-input-area">
+                <input type="text" id="user-input" placeholder="Ask a question about the college...">
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/chatbot.js?v=1.2"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Script for mobile menu toggle -->
+    <script>
+        var navLinks = document.getElementById("navlinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-250px";
+        }
+    </script>
+</body>
+
+</html>
